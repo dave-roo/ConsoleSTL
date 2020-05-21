@@ -6,13 +6,14 @@
 #include "heaps.h"
 
 
-heapsObject::heapsObject()
+heaps::heaps()
 {
 
 }
 
-heapsObject::~heapsObject()
+heaps::~heaps()
 {
+
 }
 
 
@@ -51,7 +52,7 @@ void heapsSTLrun()
 }
 
 
-void heapsObject::runHeaps()
+void heaps::runHeaps()
 {
     heapsSTLrun();
 }
