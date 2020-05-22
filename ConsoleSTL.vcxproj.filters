@@ -32,6 +32,9 @@
     <ClInclude Include="src\partitioning.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\permutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\heaps.cpp">
@@ -44,6 +47,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\partitioning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\permutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
