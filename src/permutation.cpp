@@ -1,8 +1,10 @@
 #include "permutation.h"
 
-#include <vector>
-#include <iostream>
+#include <random>
 #include <algorithm>
+#include <iterator>
+#include <iostream>
+
 
 //rotate
 //shuffle
@@ -54,4 +56,30 @@ void permutation::runPermutation()
     for (int n : v)
         std::cout << n << ' ';
     std::cout << '\n';
+
+    //shuffle
+    std::random_device rd;
+    std::mt19937 g(rd()); //Mersenne Twister
+    std::shuffle(v.begin(), v.end(), g);
+    std::copy(v.begin(), v.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << "\n";
+
+    //next_permutation
+    std::string s = "abc";
+    std::sort(s.begin(), s.end());
+    do {
+        std::cout << s << ' ';
+    } while (std::next_permutation(s.begin(), s.end()));
+    std::cout << '\n';
+
+    //prev_permutation
+    std::string k = "abc";
+    std::sort(k.begin(), k.end(), std::greater<char>());
+    do {
+        std::cout << k << ' ';
+    } while (std::prev_permutation(k.begin(), k.end()));
+    std::cout << '\n';
+
+
+
 }

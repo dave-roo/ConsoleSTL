@@ -154,6 +154,7 @@
     <Text Include="List.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Box.h" />
     <ClInclude Include="src\heaps.h" />
     <ClInclude Include="src\main.h" />
     <ClInclude Include="src\partitioning.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="src\sorting.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Box.cpp" />
     <ClCompile Include="src\heaps.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\partitioning.cpp" />
