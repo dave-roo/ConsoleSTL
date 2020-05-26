@@ -15,6 +15,7 @@ int main()
     std::cout << "b2 contents: " << std::endl << std::endl;
     b2.Print_Contents(); // Prove that we have all the values
     std::cout << std::endl << "----------------------------------" << std::endl << std::endl;
+    
 
     std::unique_ptr<heaps> heapsObj(new heaps());
     heapsObj->runHeaps();
